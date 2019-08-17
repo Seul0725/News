@@ -1,0 +1,192 @@
+/*index.html的样式*/
+*{
+	margin: 0;
+	padding: 0;
+}
+article,header,nav,img{
+	display: block;
+}
+html,body{
+	height: 100%;
+}
+body{
+	display: flex;
+}
+.info-left{
+	width: 215px;
+	background-color: #f5f6fa;
+}
+.info-right{
+	flex:1;
+	background-color: #dcdde1;
+}
+.info-left>header,.info-right>header{
+	height: 50px;
+}
+/*左侧头部*/
+.info-left>header{
+	/*background-color: #3D556D;*/
+	background-color: #0184B2;
+	line-height: 50px;
+	font-size: 20px;
+	color:#fff;
+}
+.info-right>header{
+	background-color: #f5f6fa;
+	overflow: hidden;
+	line-height: 50px;
+	padding:0 25px;
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+.info-right>.info-content{
+	height:calc(100% - 50px);
+	overflow: auto;
+	background-color: #f1f2f6;
+	padding: 10px;
+}
+.info-left>header i{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin:5px 10px;
+	margin-left: 25px;
+}
+.info-left nav{
+	height: calc(100% - 50px);
+	border:1px solid #ccc;
+}
+.info-left li{
+	line-height: 40px;
+	padding:5px 10px;
+	border-bottom: 1px solid #000;
+	cursor: pointer;
+}
+.info-left li:hover{
+	color:#000;
+	/*background-color: #34ace0;*/
+	background-color: #169FE6 !important;
+}
+.info-left li i:first-child{
+	margin-right: 10px;
+}
+.info-left li i:last-child{
+	float: right;
+	line-height: 40px;
+}
+/*右边header*/
+.info-right>header>.head-div{
+	float: right;
+	line-height: 50px;
+	cursor: pointer;
+}
+.info-right>header img{
+	width: 40px;
+	height: 40px;
+	float: left;
+	margin:5px 10px;
+	border-radius: 50%;
+}
+.info-right>header>.head-div i{
+	float: right;
+	margin-top: 17px;
+	margin-left: 10px;
+}
+.info-right>header>i{
+	margin-left: 30px;
+	cursor: pointer;
+}
+.info-right>header>.tips{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background-color: red;
+	color: #fff;
+	line-height: 15px;
+	position: absolute;
+	left: 111px;
+	top: 10px;
+	padding-left: 4px;
+	border-radius:50%;
+	cursor: pointer;
+}
+
+/*表格div*/
+.table-div{
+	margin-top: 10px;
+}
+.table-div td i{
+	cursor: pointer;
+	margin-right: 10px;
+}
+.table-div td i:last-child{
+	margin-right: 0;
+}
+/*表格内的图标颜色*/
+.table-div td i[title='编辑']{
+	color: #5BC0DE;
+}
+.table-div td i[title='删除']{
+	color: #C9302C;
+}
+.category-manager nav{
+	text-align: center;
+}
+/*资讯管理*/
+/*下拉列表*/
+.select-btns #left-select{
+	width: 200px;
+	display: inline-block;
+	position: relative;
+	top: 1px;
+}
+/*用户管理页面样式*/
+.thumbnail img.img-circle{
+	width: 150px;
+	height: 150px;
+}
+.thumbnail [class~=fa-times]{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+.thumbnail{
+	font-size: 16px;
+	line-height: 2;
+	position: relative;
+}
+.thumbnail [class~=col-md-5]{
+	margin-top: 15px;
+}
+.thumbnail [class~=col-md-6]{
+	position: relative;
+	top: 15px;
+	/*word-wrap: break-word;*/
+	white-space: nowrap;
+	/*text-overflow: ellipsis;
+	overflow: hidden;*/
+}
+.thumbnail [class~=col-md-6]:hover{
+	overflow: visible;
+}
+/*新增按钮*/
+.user-manager>.btn-add{
+	margin-left: 15px;
+}
+.user-manager>.user-div{
+	margin-top: 10px;
+}
+/*删除用户弹出框*/
+div.sweet-alert.showSweetAlert{
+    width: 350px;
+    padding: 10px;
+    left: 55%;
+}
+div.sweet-alert.showSweetAlert h2{
+	font-size: 18px;
+	margin: 5px 0;
+}
+
+div.sa-button-container button{
+	padding: 5px 15px;
+}
